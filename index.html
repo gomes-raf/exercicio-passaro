@@ -87,6 +87,16 @@
         if (passarinho.x > 100 && passarinho.ida === false) {
             console.log("passarinho volta para a esquerda até chegar em 100");
             passarinho.x -= 5;
+
+//Se a posição y do passarinho for menor que 500, deve ganhar mais 5 de movimento.
+        if (passarinho.y < 500) {
+            passarinho.y += 5;
+        }
+
+//Se a posição y dele for exatamente igul a 500, deve perder 5 posições.
+        if (passarinho.y === 500) {
+            passarinho.y =- 5;
+        }
         }
     }
 
